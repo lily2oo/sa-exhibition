@@ -23,6 +23,7 @@ header{
     border-width:0px 2vw;
     border-style:solid; 
     background-color: #104574;
+    /* background-color: #000; */
     overflow:hidden;
 	white-space:nowrap;
 }
@@ -33,7 +34,7 @@ header{
 	display:inline-block;
 	margin:0;
 	padding:0;
-	animation:hscroll 3s linear infinite;
+	animation:hscroll 8s linear infinite;
 }
 .telop li {
 	display:inline-block;
