@@ -7,7 +7,6 @@ $(function(){
         
     if (splash_text != myYear + myMonth + myDate) {//cookieデータとアクセスした日付を比較↓
             $("#splash").css("display", "block");//１回目はローディングを表示
-            $('svg', $(this)).addClass('active');
             setTimeout(function () {
                 $("#splash_logo").fadeIn(1000, function () {//1000ミリ秒（1秒）かけてロゴがフェードイン
                     setTimeout(function () {
@@ -22,6 +21,7 @@ $(function(){
                 $.cookie('accessdate', myYear + myMonth + myDate); //accessdateキーで年月日を記録
             });
             }, 1700);//1700ミリ秒（1.7秒）後に処理を実行
+            $('svg', $(this)).addClass('active');
         });
     }, 1000);//1000ミリ秒（1秒）後に処理を実行
     }else {
