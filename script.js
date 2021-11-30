@@ -25,6 +25,6 @@ $(function(){
     }, 1000);//1000ミリ秒（1秒）後に処理を実行
     }else {
         $("#splash").css("display", "none");//同日2回目のアクセスでローディング画面非表示
-    }
+    };
     $('svg', $(this)).addClass('active');
 });
