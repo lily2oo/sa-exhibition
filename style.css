@@ -17,7 +17,7 @@ header{
 }
 .telop{
     width: 96vw;
-    height: 5vh;
+    height: 3vh;
     margin: 0 auto;
     border-color: black;
     border-width:0px 2vw;
@@ -28,7 +28,7 @@ header{
 	white-space:nowrap;
 }
 .telop ul li img{
-    height: 5vh;
+    height: 3vh;
 }
 .telop ul {
 	display:inline-block;
