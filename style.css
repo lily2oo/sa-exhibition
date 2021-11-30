@@ -1,7 +1,17 @@
-*{
-    padding: 0;
+* {
     margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
 }
+
+html {
+    font-size: 62.5%;
+    font-family: 'Noto Serif JP', serif;
+    font-weight: lighter;
+    background-color: #000;
+}
+
 body{
     width: 100vw;
     background: repeat center / contain url(img/saexh_bg.jpg);
@@ -70,24 +80,24 @@ svg{
 
 .telop{
     width: 96vw;
-    height: 3vh;
+    height: 7vh;
     margin: 0 auto;
     border-color: black;
     border-width:0px 2vw;
     border-style:solid; 
-    background-color: #104574;
+    /* background-color: #104574; */
     /* background-color: #000; */
     overflow:hidden;
 	white-space:nowrap;
 }
 .telop ul li img{
-    height: 3vh;
+    height: 7vh;
 }
 .telop ul {
 	display:inline-block;
 	margin:0;
 	padding:0;
-	animation:hscroll 8s linear infinite;
+	animation:hscroll 14s linear infinite;
 }
 .telop li {
 	display:inline-block;
@@ -99,7 +109,24 @@ svg{
 }
 .introduction{
     width: 100%;
-    height: 100vh;
+    height: 90vh;
+    color: white;
+    font-family: Helvetica,Arial, sans-serif;
+}
+.introduction h2{
+    font-size: 3rem;
+    text-align: center;
+    margin: 20vh 0 10vh 0;
+}
+.intro_wrapper{
+    width: 300px;
+    margin: 0 auto;
+}
+.introduction p{
+    font-size: 1.5rem;
+    line-height: 3rem;
+    margin: 0 auto;
+    text-align: justify;
 }
 .works{
     width: 100%;
