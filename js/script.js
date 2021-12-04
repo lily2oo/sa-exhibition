@@ -28,7 +28,15 @@ $(function(){
     };
     $('svg', $(this)).addClass('active');
 });
-
+$(function(){
+    $('header').on('inview', function(event, isInView){
+        if (isInView) {
+            $('svg', $(this)).addClass('active');        
+        }else{
+            $('svg', $(this)).removeClass('active');        
+        }
+      });
+});
 $(function(){
     $('.repeat').on('inview', function(event, isInView){
         if (isInView) {
