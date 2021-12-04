@@ -28,3 +28,16 @@ $(function(){
     };
     $('svg', $(this)).addClass('active');
 });
+
+$(function(){
+    $('.repeat').on('inview', function(event, isInView){
+        if (isInView) {
+            var classes =  $(this).parent().attr('class');
+            $(this).parent().attr('class', 'animate');
+            var indicator = $(this);
+            setTimeout(function(){ 
+                $(indicator).parent().addClass(classes);
+            }, 20);
+        }
+      });
+});

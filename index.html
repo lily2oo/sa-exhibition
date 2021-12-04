@@ -7,6 +7,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SA EXHIBITION</title>
     <link rel="stylesheet" href="style.css">
+    <script>
+        (function (d) {
+            var config = {
+                    kitId: 'fcm7plc',
+                    scriptTimeout: 3000,
+                    async: true
+                },
+                h = d.documentElement,
+                t = setTimeout(function () {
+                    h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+                }, config.scriptTimeout),
+                tk = d.createElement("script"),
+                f = false,
+                s = d.getElementsByTagName("script")[0],
+                a;
+            h.className += " wf-loading";
+            tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+            tk.async = true;
+            tk.onload = tk.onreadystatechange = function () {
+                a = this.readyState;
+                if (f || a && a != "complete" && a != "loaded") return;
+                f = true;
+                clearTimeout(t);
+                try {
+                    Typekit.load(config)
+                } catch (e) {}
+            };
+            s.parentNode.insertBefore(tk, s)
+        })(document);
+    </script>
 </head>
 
 <body>
@@ -108,7 +138,7 @@
                 </svg>
             </div>
         </header>
-        <section class="telop">
+        <section class="telop" id="telop1">
             <ul>
                 <li><img src="img/telop.png" alt="SA EXTIBITION"></li>
                 <li><img src="img/telop.png" alt="SA EXTIBITION"></li>
@@ -123,10 +153,22 @@
         <section class="introduction">
             <h2>about</h2>
             <div class="intro_wrapper">
-            <p>we are maki’s SA class.we are maki’s SA class.we are maki’s SA class.we are maki’s SA class.we are maki’s SA class.we are maki’s SA class.we are maki’s SA class.we are maki’s SA class.we are maki’s SA class.we are maki’s SA class.we are maki’s SA class.we are maki’s SA class.we are maki’s SA class.we are maki’s SA class.we are maki’s SA class.we are maki’s SA class.we are maki’s SA class.we are maki’s SA class.we are maki’s SA class.we are maki’s SA class.</p>
+                <div class="text_animation">
+                    <p><span>Welcome to the fascinating exhibition </span><span>organized by the G2 class.We are Maki's
+                            SA class. </span><span>This time </span><span>we decided to do an exhibition in
+                            collaboration </span><span>with G1 and G2 classes, </span><span>and we were divided into
+                            several groups </span><span>to create different works. </span><span>This website is one of
+                            the works. </span><span>By touching the thumbnail of each work, </span><span>you can easily
+                            access the site </span><span>where you can enjoy the work. </span><span>There, you can learn
+                            more </span><span>about the work itself and its details.</span><span>If you have a favorite
+                            work or feedback,</span><span> please let us know.</span><span>(Maki will be especially
+                            pleased.)</span><span>
+                            We hope you enjoy them.</span></p>
+                    <a class="repeat" href="javascript:void(0);"></a>
+                </div>
             </div>
         </section>
-        <section class="telop">
+        <section class="telop" id="telop2">
             <ul>
                 <li><img src="img/telop.png" alt="SA EXTIBITION"></li>
                 <li><img src="img/telop.png" alt="SA EXTIBITION"></li>
@@ -138,12 +180,20 @@
                 <li><img src="img/telop.png" alt="SA EXTIBITION"></li>
             </ul>
         </section>
-        <section class="works"></section>
+        <section class="works">
+            <div class="works_content">
+                <p>No.01</p>
+                <div class="box"></div>
+                <img src="" alt="">
+                <h2>MOVIE</h2>
+            </div>
+        </section>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.
 cookie.js"></script>
-    <script src="script.js"></script>
+    <script src="js/jquery.inview.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
