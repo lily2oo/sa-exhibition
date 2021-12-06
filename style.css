@@ -93,16 +93,15 @@ header {
     height: var(--glitch-height);
     overflow: hidden;
 }
-
 .glitch__img {
     position: absolute;
     top: calc(-1 * var(--gap-vertical));
     left: calc(-1 * var(--gap-horizontal));
-    width: calc(100% + var(--gap-horizontal) * 2);
-    height: calc(100% + var(--gap-vertical) * 2);
+    width:100vw;
+    height: 100vh;
     background: url(img/fv.jpg) no-repeat 50% 0;
     background-color: var(--blend-color-1);
-    background-size: cover;
+    background-size: contain;
     transform: translate3d(0, 0, 0);
     background-blend-mode: var(--blend-mode-1);
 }
@@ -111,6 +110,13 @@ header {
     opacity: 0;
 }
 
+.imgloaded .svglogo{
+    animation-duration: var(--time-anim);
+    animation-delay: calc(var(--delay-anim) + var(--time-anim) * 0.2);
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-name: glitch-anim-text;
+}
 .imgloaded .glitch__img:nth-child(n+2) {
     animation-duration: var(--time-anim);
     animation-delay: var(--delay-anim);
@@ -445,7 +451,6 @@ header {
     9.9% {
         transform: translate3d(calc(-1 * var(--gap-horizontal)), 0, 0) scale3d(-1, -1, 1);
     }
-
     10%,
     100% {
         transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
@@ -473,6 +478,7 @@ header {
 .svglogo {
     width: 100%;
     position: relative;
+    top: 180px;
     z-index: 100;
     text-align: center;
 }
@@ -480,9 +486,6 @@ header {
 svg {
     width: 90vw;
     max-width: 1000px;
-    position: absolute;
-    top: 30vh;
-    transform: translate(-50%, -50%);
 }
 
 
