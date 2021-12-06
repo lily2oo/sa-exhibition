@@ -555,7 +555,6 @@ svg {
     font-size: 1.5rem;
     line-height: 3rem;
     margin: 0 auto;
-    word-break: break-all;
     text-align: justify;
 }
 
@@ -755,7 +754,7 @@ svg.active .svg-elem-16 {
 }
 
 .animate span:nth-of-type(3) {
-    animation-delay: .1s;
+    animation-delay: .25s;
 }
 
 .animate span:nth-of-type(4) {
@@ -763,11 +762,11 @@ svg.active .svg-elem-16 {
 }
 
 .animate span:nth-of-type(5) {
-    animation-delay: .2s;
+    animation-delay: .4s;
 }
 
 .animate span:nth-of-type(6) {
-    animation-delay: .25s;
+    animation-delay: .1s;
 }
 
 .animate span:nth-of-type(7) {
@@ -775,11 +774,11 @@ svg.active .svg-elem-16 {
 }
 
 .animate span:nth-of-type(8) {
-    animation-delay: .35s;
+    animation-delay: .55s;
 }
 
 .animate span:nth-of-type(9) {
-    animation-delay: .4s;
+    animation-delay: .2s;
 }
 
 .animate span:nth-of-type(10) {
@@ -791,7 +790,7 @@ svg.active .svg-elem-16 {
 }
 
 .animate span:nth-of-type(12) {
-    animation-delay: .55s;
+    animation-delay: .35s;
 }
 
 .animate span:nth-of-type(13) {
@@ -799,7 +798,7 @@ svg.active .svg-elem-16 {
 }
 
 .animate span:nth-of-type(14) {
-    animation-delay: .65s;
+    animation-delay: .8s;
 }
 
 .animate span:nth-of-type(15) {
@@ -807,11 +806,11 @@ svg.active .svg-elem-16 {
 }
 
 .animate span:nth-of-type(16) {
-    animation-delay: .75s;
+    animation-delay: .9s;
 }
 
 .animate span:nth-of-type(17) {
-    animation-delay: .8s;
+    animation-delay: .65s;
 }
 
 .animate span:nth-of-type(18) {
@@ -819,7 +818,7 @@ svg.active .svg-elem-16 {
 }
 
 .animate span:nth-of-type(19) {
-    animation-delay: .9s;
+    animation-delay: .75s;
 }
 
 .animate span:nth-of-type(20) {
@@ -829,13 +828,11 @@ svg.active .svg-elem-16 {
 .text_animation span {
     color: #fff;
     opacity: 0;
-    transform: translate(-150px, 0) scale(.3);
     animation: leftRight .5s forwards;
 }
 
 @keyframes leftRight {
     40% {
-        transform: translate(50px, 0) scale(.7);
         opacity: 1;
         color: #104574;
     }
@@ -845,12 +842,10 @@ svg.active .svg-elem-16 {
     }
 
     80% {
-        transform: translate(0) scale(2);
         opacity: 0;
     }
 
     100% {
-        transform: translate(0) scale(1);
         opacity: 1;
     }
 }
