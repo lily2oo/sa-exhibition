@@ -839,9 +839,9 @@ svg.active .svg-elem-16 {
         opacity: 1;
     }
 }
-.button_container{
+.works{
     width: 100%;
-    margin-top: 100px;
+    margin-top: 50px;
     font-family: ab-anzu-r, sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -853,7 +853,7 @@ svg.active .svg-elem-16 {
 .button{
     display: inline-block;
     position: relative;
-    margin: 20px;
+    margin: 0 20px;
 }
 .button p{
     position: absolute;
@@ -867,14 +867,42 @@ svg.active .svg-elem-16 {
     width: 80%;
     max-width: 700px;
 }
-.works {
+.works_container {
     width: 100%;
-    height: 200vh;
-    margin-top: 100px;
     font-family: ab-anzu-r, sans-serif;
     font-weight: 400;
     font-style: normal;
     color: #fff;
+    text-align: center;
+}
+.works_wrapper{
+    display: none;
+}
+.works_content{
+    height: 500px;
+    position: relative;
+    display: inline-block;
+}
+.works_content *{
+    position: absolute;
+    transform: translate(-50%, 0%);
+}
+
+.works_content div:nth-child(1){
+    height: 500px;
+    width: 300px;
+    border: solid white 1px;
+}
+.works_content img:nth-child(2){
+    width: 250px;
+    top: 0;
+    left: 0;
+}
+.works_content h2:nth-child(3){
+    top: 60%;
+}
+.works a{
+    color: white;
 }
 footer{
     margin-top: 50px;
