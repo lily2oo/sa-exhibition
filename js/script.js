@@ -66,6 +66,11 @@ $(function () {
     }
   });
 });
+$(function(){
+  $('#nav-toggle').click(function(){
+    $('body').toggleClass('open');
+  });
+});
 $(function () {
   $('.repeat').on('inview', function (event, isInView) {
     if (isInView) {
