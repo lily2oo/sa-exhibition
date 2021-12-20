@@ -1028,6 +1028,9 @@ svg.active .svg-elem-16 {
     display: none;
     margin-top: 80px;
 }
+.works_wrapper > p{
+    margin: 30px;
+}
 .works_wrapper p:nth-child(1){
     font-size: 2rem;
 }
