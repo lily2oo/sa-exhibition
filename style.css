@@ -650,7 +650,6 @@ svg {
     display: inline-block;
     margin: 0;
     padding: 0;
-    animation: hscroll 14s linear infinite;
 }
 
 .telop li {
