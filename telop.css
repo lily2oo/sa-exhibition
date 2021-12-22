@@ -1,0 +1,14 @@
+.telop ul {
+    animation: hscroll 14s linear infinite;
+}
+
+@keyframes hscroll {
+    0% {
+        transform: translateX(4px);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+
+}
