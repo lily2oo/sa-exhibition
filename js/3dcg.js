@@ -42,3 +42,12 @@ $(function(){
         $(this).stop().fadeToggle(100);
     });
 });
+
+$(function(){
+    $(".right").on("click", function(){
+        $("#face").stop().fadeToggle(100);
+    });
+    $("#face").on("click", function(){
+        $(this).stop().fadeToggle(100);
+    });
+});
