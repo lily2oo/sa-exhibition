@@ -70,6 +70,9 @@ $(function(){
   $('#nav-toggle').click(function(){
     $('body').toggleClass('open');
   });
+  $('#global-nav a').click(function(){
+    $('body').toggleClass('open');
+  });
 });
 $(function () {
   $('.repeat').on('inview', function (event, isInView) {

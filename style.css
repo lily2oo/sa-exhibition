@@ -244,12 +244,28 @@ header {
     opacity: 0;
 }
 
-.imgloaded .svglogo {
+.imgloaded .svglogo,
+.imgloaded .g1_glitch,
+.imgloaded .g2_glitch,
+.imgloaded .past_glitch{
     animation-duration: var(--time-anim);
-    animation-delay: calc(var(--delay-anim) + var(--time-anim) * 0.2);
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-name: glitch-anim-text;
+}
+
+.imgloaded .svglogo {
+    animation-delay: calc(var(--delay-anim) + var(--time-anim) * 0.2);
+}
+
+.imgloaded .g1_glitch{
+    animation-delay: calc(var(--delay-anim) + var(--time-anim) * 0.2);
+}
+.imgloaded .g2_glitch{
+    animation-delay: calc(var(--delay-anim) + var(--time-anim) * 0.33);
+}
+.imgloaded .past_glitch{
+    animation-delay: calc(var(--delay-anim) + var(--time-anim) * 0.77);
 }
 
 .imgloaded .glitch__img:nth-child(n+2) {
