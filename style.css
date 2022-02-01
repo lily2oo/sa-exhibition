@@ -1078,19 +1078,19 @@ svg.active .svg-elem-16 {
 
 .works_content div:nth-child(1) {
     height: 430px;
-    width: 300px;
+    width: 270px;
     border: solid white 1px;
 }
 
 .works_content img:nth-child(2) {
-    width: 250px;
-    top: 0;
+    width: 230px;
+    top: 20px;
     left: 0;
 }
 
 .works_content h2:nth-child(3) {
     top: 60%;
-    font-size: 3rem;
+    font-size: 2.7rem;
 }
 
 .works a {
