@@ -29,6 +29,7 @@ $(function () {
   $('svg', $(this)).addClass('active');
 });
 
+$(function () {
 (function (d) {
   var config = {
       kitId: 'fcm7plc',
@@ -57,6 +58,7 @@ $(function () {
   };
   s.parentNode.insertBefore(tk, s)
 })(document);
+});
 
 $(function () {
   $('header').on('inview', function (event, isInView) {
