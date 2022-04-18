@@ -26,7 +26,6 @@ $(function () {
   } else {
     $("#splash").css("display", "none"); //同日2回目のアクセスでローディング画面非表示
   };
-  $('svg', $(this)).addClass('active');
 });
 
 $(function () {
@@ -68,16 +67,13 @@ $(function () {
       $('svg', $(this)).removeClass('active');
     }
   });
-});
-$(function(){
   $('#nav-toggle').click(function(){
     $('body').toggleClass('open');
   });
+
   $('#global-nav a').click(function(){
     $('body').toggleClass('open');
   });
-});
-$(function () {
   $('.repeat').on('inview', function (event, isInView) {
     if (isInView) {
       var classes = $(this).parent().attr('class');
@@ -88,8 +84,6 @@ $(function () {
       }, 20);
     }
   });
-});
-$(function () {
   setTimeout(() => document.body.classList.add('render'), 60);
   const navdemos = Array.from(document.querySelectorAll('nav.demos > .demo'));
   const total = navdemos.length;
@@ -120,10 +114,6 @@ $(function () {
     document.body.classList.remove('loading');
     document.body.classList.add('imgloaded');
   });
-});
-
-
-$(function () {
   $('.button').click(function () {
     $(this).parent().find(".works_wrapper").stop().fadeToggle(1000);
   });
