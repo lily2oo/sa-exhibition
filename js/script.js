@@ -27,7 +27,10 @@ $(function () {
     $("#splash").css("display", "none"); //同日2回目のアクセスでローディング画面非表示
   };
 });
-
+$(function () {
+  var style = '<link rel="stylesheet" href="telop.css">';
+  $('head link:last').after(style);
+});
 $(function () {
 (function (d) {
   var config = {
